@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes" name="viewport">
+        
+        <link rel="shortcut icon" type="image/png" href="./img/logo.png"/>
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+        <link rel="stylesheet" href="./css/main.css">
+        
+        <title>Evaluating Usability and Accessibility</title>
+    </head>
+    <body>
+        <header id="header">
+            <section class="main-header">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <a href="./" class="brand" title="Upon A Time"><img src="./img/logo.png" alt="Chinakrit Pipatupatum"></a>
+                            <nav role="navigation" id="main-nav">
+                                <ul id="menu-main-nav" class="menu">
+                                    <li class="menu-item"><a href="./index.html">Why?</a></li>
+                                    <li class="menu-item"><a href="./kickstarter.html">Kickstarter</a></li>
+                                    <li class="menu-item"><a href="./eventbrite.html">Eventbrite</a></li>
+                                    <li class="menu-item current"><a href="./citymapper.html">Citymapper</a></li>
+                                    <li class="menu-item"><a href="./spotify.html">Spotify</a></li>
+                                    <li class="menu-item"><a href="./thissite.html">This website</a></li>
+                                </ul> 
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </header>
+        
+        <section class="space-30">
+            <div class="container">
+                <div class="row">
+                    <div class="col text-center">
+                        <img src="./img/citymapper-120.jpg" class="img-fluid" alt="citymapper">
+                        <h1 class="display-4">Citymapper</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="space-30 border-bottom text-big">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-10">
+                        <p>Citymapper is a travelling application where the system will calculate and provide the user a shorten travel route to a destination and optional transit with real-time disruption alerts for each transportation. The objects on it application have a good arrangement, but some contents are using thin text or colour contrast ratio that does not meet the accessibility standard. This will be an issue for users with low vision condition or deficiency, they may find it uncomfortable and difficult to read.</p>
+                    </div>
+                    
+                    <div class="w-100"></div>
+                    
+                    <div class="col-md-4">
+                        <figure class="figure margin-bottom-20">
+                          <img src="./img/citymapper/thin-text.PNG" class="figure-img img-fluid" alt="Using of thin text and low colour contrast ratio">
+                          <figcaption class="figure-caption">Using of thin text and low colour contrast ratio.</figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-md-4">
+                        <figure class="figure margin-bottom-20">
+                          <img src="./img/citymapper/low-color-contrast.PNG" class="figure-img img-fluid" alt="Using text with low colour contrast ratio">
+                          <figcaption class="figure-caption">Using text with low colour contrast ratio.</figcaption>
+                        </figure>
+                    </div>
+                    
+                    <div class="w-100"></div>
+                    
+                    <div class="col-md-10">
+                        <p>Furthermore, some icons without label or description may confuse the user of their first time, but the application was using a general icon to represent it button.</p>
+                        <div class="text-center">
+                            <figure class="figure margin-bottom-20 max-width-300">
+                              <img src="./img/citymapper/buttons%20without%20label.PNG" class="figure-img img-fluid" alt="Button icons without label or description">
+                              <figcaption class="figure-caption">Button icons without label or description.</figcaption>
+                            </figure>
+                        </div>
+                        <p>However, iOS provide accessibility feature for boost user accessibility over the application. Zoom is another function that users can use for increasing their readability and visibility. Users can use this function to zoom on any text that they find difficult to read. In addition, a colour filter also available to use for colour blindness user.</p>
+                    </div>
+                    
+                    <div class="w-100"></div>
+                    
+                    <div class="col-md-4">
+                        <figure class="figure margin-bottom-20">
+                          <img src="./img/citymapper/zoom.JPG" class="figure-img img-fluid" alt="Enable zoom feature on iOS">
+                          <figcaption class="figure-caption">Enable zoom feature on iOS.</figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-md-4">
+                        <figure class="figure margin-bottom-20">
+                          <img src="./img/citymapper/color%20filter.JPG" class="figure-img img-fluid" alt="Enable zoom feature with a colour filter on iOS">
+                          <figcaption class="figure-caption">Enable zoom feature with a colour filter on iOS.</figcaption>
+                        </figure>
+                    </div>
+                    
+                    <div class="w-100"></div>
+                    
+                    <div class="col-md-10">
+                        <p>The VoiceOver, built-in screen reader application on iOS was used for testing, which the Citymapper app was supported screen reader and understandable of the word that read aloud or not. The application was compatible with VoiceOver, but it is saying just “button” without any description of the button that is not understandable. This is a critical problem for low vision deficiency and blindness users, they may be unable to use the application efficiently.</p>
+                        <div class="text-center">
+                            <figure class="figure margin-bottom-20 max-width-300">
+                              <img src="./img/citymapper/voiceover%20problem.PNG" class="figure-img img-fluid" alt=" The buttons that screen reader was just saying “button” without description">
+                              <figcaption class="figure-caption"> The buttons that screen reader was just saying “button” without description.</figcaption>
+                            </figure>
+                        </div>
+                        <p>According to the Equality Act, the application missing provides many information or feature which requires on the standard. The app does not have section of providing information about application.</p>
+                        <p class="test-device">The evaluation and test were take place on iOS version 10.3.3 (14G60) in iPhone 6s model MKQN2TH/A.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <footer>
+            <section class="main-footer">
+                <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <p class="text-center">This website is a part of coursework for Designing Usable and Accessible Technologies (COMP 6219). <br>University of Southampton.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>  
+            </footer>
+        
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+    </body>
+</html>

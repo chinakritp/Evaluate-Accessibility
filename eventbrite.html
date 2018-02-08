@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes" name="viewport">
+        
+        <link rel="shortcut icon" type="image/png" href="./img/logo.png"/>
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+        <link rel="stylesheet" href="./css/main.css">
+        
+        <title>Evaluating Usability and Accessibility</title>
+    </head>
+    <body>
+        <header id="header">
+            <section class="main-header">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <a href="./" class="brand" title="Upon A Time"><img src="./img/logo.png" alt="Chinakrit Pipatupatum"></a>
+                            <nav role="navigation" id="main-nav">
+                                <ul id="menu-main-nav" class="menu">
+                                    <li class="menu-item"><a href="./index.html">Why?</a></li>
+                                    <li class="menu-item"><a href="./kickstarter.html">Kickstarter</a></li>
+                                    <li class="menu-item current"><a href="./eventbrite.html">Eventbrite</a></li>
+                                    <li class="menu-item"><a href="./citymapper.html">Citymapper</a></li>
+                                    <li class="menu-item"><a href="./spotify.html">Spotify</a></li>
+                                    <li class="menu-item"><a href="./thissite.html">This website</a></li>
+                                </ul> 
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </header>
+        
+        <section class="space-30">
+            <div class="container">
+                <div class="row">
+                    <div class="col text-center">
+                        <img src="./img/eventbrite-120.jpg" class="img-fluid" alt="eventbrite">
+                        <h1 class="display-4">Eventbrite</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="space-30 border-bottom text-big">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-10">
+                        <p>The Tab Index issue was also found on Eventbrite website. Only on Google Chrome and Microsoft Edge that users are able to use Tab Index for navigation on the web, but on Firefox Quantum and Safari, Tab Index cannot detect objects of an entire page. It just jumps between the searching area of the very top of the page.</p>
+                        <div class="text-center">
+                            <figure class="figure margin-bottom-20">
+                              <img src="./img/eventbrite/searching.png" class="figure-img img-fluid" alt="Searching area of Eventbrite">
+                              <figcaption class="figure-caption">Searching area of Eventbrite.</figcaption>
+                            </figure>
+                        </div>
+                        <p>On the homepage, all category titles’ text colour does not meet the colour contrast ratio standard on background images. As well as in the inner page, the website occasionally uses white and thin text over the light background colour. This would be difficult for users who have vision conditions or colour blindness.</p>
+                         <div class="text-center">
+                            <figure class="figure margin-bottom-20">
+                              <img src="./img/eventbrite/text%20on%20img.png" class="figure-img img-fluid" alt="Category titles on background images">
+                              <figcaption class="figure-caption">Category titles on background images.</figcaption>
+                            </figure>
+                             <figure class="figure margin-bottom-20">
+                              <img src="./img/eventbrite/text%20on%20bright%20bg.png" class="figure-img img-fluid" alt="Thin and bright colour text on light background colour">
+                              <figcaption class="figure-caption">Thin and bright colour text on light background colour.</figcaption>
+                            </figure>
+                        </div>
+                        <p>And also, a great number of images were missing alternative text, as well as call-to-action buttons existed without value or text in it. Lack of these information would be the main issue for screen reader users. They will be unable to reach fully information and experience from the website.</p>
+                    </div>
+                    
+                    <div class="w-100"></div>
+                    
+                    <div class="col-md-4">
+                        <figure class="figure margin-bottom-20">
+                          <img src="./img/eventbrite/missing%20alt%20img2.png" class="figure-img img-fluid" alt="Number of images that missing alternative text on Eventbrite from WAVE tool">
+                          <figcaption class="figure-caption">Number of images that missing alternative text on Eventbrite from WAVE tool.</figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-md-8">
+                        <figure class="figure margin-bottom-20">
+                          <img src="./img/eventbrite/missing%20alt%20img.png" class="figure-img img-fluid" alt="Missing alternative text of image on Eventbrite">
+                          <figcaption class="figure-caption">Missing alternative text of image on Eventbrite.</figcaption>
+                        </figure>
+                    </div>
+                    
+                    <div class="w-100"></div>
+                    
+                    <div class="col-md-10">
+                        <div class="text-center">
+                            <figure class="figure margin-bottom-20">
+                              <img src="./img/eventbrite/buttons%20missing%20val.png" class="figure-img img-fluid" alt="Buttons that lack of value and text">
+                              <figcaption class="figure-caption">Buttons that lack of value and text.</figcaption>
+                            </figure>
+                        </div>
+                        <p>The First Heading (<code>&lt;h1&gt;</code>) is the meaning of the page title which is very important according to WebAIM standard, but some pages of Eventbrite are missing first heading tag. It was used for tracking navigation where the user is using screen reader. This will be difficult for users with the screen reader to check where they are on the website.</p>
+                        <div class="text-center">
+                            <figure class="figure margin-bottom-20">
+                              <img src="./img/eventbrite/missing%20h1.png" class="figure-img img-fluid" alt="Missing first heading tag on Contact Us page">
+                              <figcaption class="figure-caption">Missing first heading tag on Contact Us page.</figcaption>
+                            </figure>
+                        </div>
+                        <p>Furthermore, there are some links, which do not have any label or content inside them, which is lack of description for the icon that user can be misunderstood. This will be a critical issue for users with the screen reader where they may not understand what the purpose of these links are.</p>
+                        <div class="text-center">
+                            <figure class="figure margin-bottom-20">
+                              <img src="./img/eventbrite/link%20without%20text.png" class="figure-img img-fluid" alt="The icon link that missing label or content inside">
+                              <figcaption class="figure-caption">The icon link that missing label or content inside.</figcaption>
+                            </figure>
+                            <figure class="figure margin-bottom-20">
+                              <img src="./img/eventbrite/icon%20no%20des.png" class="figure-img img-fluid" alt="HTML code of Figure 20, shows that there is no description of the link icon">
+                              <figcaption class="figure-caption">HTML code of Figure 20, shows that there is no description of the link icon.</figcaption>
+                            </figure>
+                        </div>
+                        <p>In addition, on the main page of event search by location, a location form has multiple labels, which should have at most one label for each form according to WebAIM standard. This would affect the screen reader performance as it may not read the label or read only one label.</p>
+                        <div class="text-center">
+                            <figure class="figure margin-bottom-20">
+                              <img src="./img/eventbrite/multi%20labels.png" class="figure-img img-fluid" alt="Form with multiple labels">
+                              <figcaption class="figure-caption">Form with multiple labels.</figcaption>
+                            </figure>
+                        </div>
+                        <p>Moreover, another critical issue is on responsive to small devices. Most navigations and features on the website were hidden when opening on mobile (width smaller than 991 pixels). Mobile users are unable to use the website with efficient and effectiveness like on a desktop. This could limit the user’s ability to reach for content on the website <a href="http://whatusersdo.com/blog/hamburger- menus-damage-ux/" target="_blank">(Duddell, 2016)</a>. A hamburger menu icon without label may confuse users when they see it for the first time.</p>
+                    </div>
+                    
+                    <div class="w-100"></div>
+                    
+                    <div class="col-md-9">
+                        <figure class="figure margin-bottom-20">
+                          <img src="./img/eventbrite/desktop.png" class="figure-img img-fluid" alt="Eventbrite on a desktop">
+                          <figcaption class="figure-caption">Eventbrite on a desktop.</figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-md-3">
+                        <figure class="figure margin-bottom-20">
+                          <img src="./img/eventbrite/mobile.png" class="figure-img img-fluid" alt="Eventbrite on mobile">
+                          <figcaption class="figure-caption">Eventbrite on mobile.</figcaption>
+                        </figure>
+                    </div>
+                    
+                    <div class="w-100"></div>
+                    
+                    <div class="col-md-10">
+                        <p>Nonetheless, the all these critical issues were solved by assistive tools. Instead of navigating through the website by Tab Index, Mouse Keys allowed the user to use their numeric keypad control their cursor. They will easily navigate all feature and achieve full experience from the website like using a mouse or trackpad. Users can also use ATbar to increase their accessibility and readability on the website. There are many useful features on ATbar that users are able to use to adjust the colour contrast to fit their vision, such as adjusting text size, text colour, and background colour. However, there are some issues that need to solve in HTML, such as images alternative text, missing buttons value, lack of icon description, multiple form labels, and navigation menu on responsive design. In addition, if multiple labels of a form are necessary, it can be used aria-labelled by attribute as second labels.</p>
+                        <p>Eventbrite received an average score of 72% on Web2Access.org.</p>
+                        <div class="text-center">
+                            <figure class="figure margin-bottom-20">
+                              <img src="./img/eventbrite/eventbrite-web2access.png" class="figure-img img-fluid" alt="Review of Eventbrite on Web2Access">
+                              <figcaption class="figure-caption">Review of Eventbrite on Web2Access.</figcaption>
+                            </figure>
+                        </div>
+                        <p class="test-device">The evaluation was completed on Firefox Quantum version 57.0.3 (64-bit), Safari version 11.0.2, Google Chrome version 63.0.3239.84 (64-bit), and Microsoft Edge version 5.105860.0 on Windows 10 by Parallels Desktop (virtual machine) in MacBook Air (Early 2014) with macOS High Sierra (10.13.2) and VoiceOver as a screen reader.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <footer>
+            <section class="main-footer">
+                <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <p class="text-center">This website is a part of coursework for Designing Usable and Accessible Technologies (COMP 6219). <br>University of Southampton.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>  
+            </footer>
+        
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+    </body>
+</html>

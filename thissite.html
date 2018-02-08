@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes" name="viewport">
+        
+        <link rel="shortcut icon" type="image/png" href="./img/logo.png"/>
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+        <link rel="stylesheet" href="./css/main.css">
+        
+        <title>Evaluating Usability and Accessibility</title>
+    </head>
+    <body>
+        <header id="header">
+            <section class="main-header">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <a href="./" class="brand" title="Upon A Time"><img src="./img/logo.png" alt="Chinakrit Pipatupatum"></a>
+                            <nav role="navigation" id="main-nav">
+                                <ul id="menu-main-nav" class="menu">
+                                    <li class="menu-item"><a href="./index.html">Why?</a></li>
+                                    <li class="menu-item"><a href="./kickstarter.html">Kickstarter</a></li>
+                                    <li class="menu-item"><a href="./eventbrite.html">Eventbrite</a></li>
+                                    <li class="menu-item"><a href="./citymapper.html">Citymapper</a></li>
+                                    <li class="menu-item"><a href="./spotify.html">Spotify</a></li>
+                                    <li class="menu-item current"><a href="./thissite.html">This website</a></li>
+                                </ul> 
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </header>
+        
+        <section class="space-30">
+            <div class="container">
+                <div class="row">
+                    <div class="col text-center">
+                        <img src="./img/cp-120.jpg" class="img-fluid" alt="cp">
+                        <h1 class="display-4">This Website</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="space-30 border-bottom text-big">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-10">
+                        <p>There is no critical accessibility issue found on this site because it was built following accessibility guideline and use HTML5 and ARIA attribute to improve the website accessibility.</p>
+                        <div class="text-center">
+                            <figure class="figure margin-bottom-20">
+                              <img src="./img/thissite/evaluate.png" class="figure-img img-fluid" alt="WAVE on /cp4n17">
+                              <figcaption class="figure-caption">Using WAVE on /cp4n17.</figcaption>
+                            </figure>
+                        </div>
+                        <p>As well as, an order of structure was simple which is easy to follow which is understandable on no styles website with obviously contrasting heading size. This would boost users' learnability and can learn how to use the website at first visit. To which be able to understand what screen reader (VoiceOver on macOS) was read aloud of an entire website. And it allowed user to zoom up to 300 persent with readable contents and correct structure.</p>
+                        <div class="text-center">
+                            <figure class="figure margin-bottom-20">
+                              <img src="./img/thissite/zooming.jpg" class="figure-img img-fluid" alt="zoom on /cp4n17">
+                              <figcaption class="figure-caption">Zooming on /cp4n17.</figcaption>
+                            </figure>
+                        </div>
+                        <p>Moreover, this website is completely designed for support responsive. Contents were properly arranging on both desktop and mobile devices, without any omit or hide contents which will not affect user experience when they use crossing devices.</p>
+                    </div>
+                    
+                    <div class="w-100"></div>
+                    
+                    <div class="col-md-9">
+                        <figure class="figure margin-bottom-20">
+                          <img src="./img/thissite/desktop.png" class="figure-img img-fluid" alt="This site on Desktop">
+                          <figcaption class="figure-caption">This site on Desktop.</figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-md-3">
+                        <figure class="figure margin-bottom-20">
+                          <img src="./img/thissite/mobile.png" class="figure-img img-fluid" alt="This site on Mobile">
+                          <figcaption class="figure-caption">This site on Mobile.</figcaption>
+                        </figure>
+                    </div>
+                    
+                    <div class="w-100"></div>
+                    
+                    <div class="col-md-10">
+                        <p>However, some common issues still found on the web. A link colour has lower colour contrast ratio than the accessibility standard requires.</p>
+                        <div class="text-center">
+                            <figure class="figure margin-bottom-20">
+                              <img src="./img/thissite/low%20color%20contrast.png" class="figure-img img-fluid" alt="low color contrast">
+                              <figcaption class="figure-caption">Low colour contrast of links.</figcaption>
+                            </figure>
+                        </div>
+                        <p>And another concern is main navigation on mobile device, it was using scrolling navigation style which some user who does not have experiance with it before may misunderstand and do not know how to use it.</p>
+                        <div class="text-center">
+                            <figure class="figure margin-bottom-20">
+                              <img src="./img/thissite/mobile%20nav.png" class="figure-img img-fluid" alt="main navigation on mobile">
+                              <figcaption class="figure-caption">Scrolling navigation on small screen device.</figcaption>
+                            </figure>
+                        </div>
+                        <p class="test-device">The evaluation was completed on Firefox Quantum version 57.0.3 (64-bit), Safari version 11.0.2, Google Chrome version 63.0.3239.84 (64-bit), and Microsoft Edge version 5.105860.0 on Windows 10 by Parallels Desktop (virtual machine) in MacBook Air (Early 2014) with macOS High Sierra (10.13.2) and VoiceOver as a screen reader.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <footer>
+            <section class="main-footer">
+                <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <p class="text-center">This website is a part of coursework for Designing Usable and Accessible Technologies (COMP 6219). <br>University of Southampton.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>  
+            </footer>
+        
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+    </body>
+</html>

@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes" name="viewport">
+        
+        <link rel="shortcut icon" type="image/png" href="./img/logo.png"/>
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+        <link rel="stylesheet" href="./css/main.css">
+        
+        <title>Evaluating Usability and Accessibility</title>
+    </head>
+    <body>
+        <header id="header">
+            <section class="main-header">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <a href="./" class="brand" title="Upon A Time"><img src="./img/logo.png" alt="Chinakrit Pipatupatum"></a>
+                            <nav role="navigation" id="main-nav">
+                                <ul id="menu-main-nav" class="menu">
+                                    <li class="menu-item"><a href="./index.html">Why?</a></li>
+                                    <li class="menu-item current"><a href="./kickstarter.html">Kickstarter</a></li>
+                                    <li class="menu-item"><a href="./eventbrite.html">Eventbrite</a></li>
+                                    <li class="menu-item"><a href="./citymapper.html">Citymapper</a></li>
+                                    <li class="menu-item"><a href="./spotify.html">Spotify</a></li>
+                                    <li class="menu-item"><a href="./thissite.html">This website</a></li>
+                                </ul> 
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </header>
+        
+        <section class="space-30">
+            <div class="container">
+                <div class="row">
+                    <div class="col text-center">
+                        <img src="./img/kickstarter-120.jpg" class="img-fluid" alt="kickstarter">
+                        <h1 class="display-4">Kickstarter</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="space-30 border-bottom text-big">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-10">
+                        <p>Kickstarter website was performed with a minimalistic style which seems clean and simple, but it also found some usability and accessibility issues. First of all, obvious issue that has been found is Tab Index. It seems to work perfectly on Firefox Quantum, Google Chrome, and Microsoft Edge , which is ordering from top to bottom of the page and shows outstanding stylesheet of the selected object. Unless on Safari, Tab Index was not working, it is unable to detect the element on the page.</p>
+                    </div>
+                    
+                    <div class="w-100"></div>
+                    
+                    <div class="col-md-4">
+                        <figure class="figure margin-bottom-20">
+                          <img src="./img/kickstarter/firefox%20tab.png" class="figure-img img-fluid" alt="Tab Index on Firefox Quantum">
+                          <figcaption class="figure-caption">Selected element with Tab Index on Firefox Quantum.</figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-md-4">
+                        <figure class="figure margin-bottom-20">
+                          <img src="./img/kickstarter/chrome%20tab.png" class="figure-img img-fluid" alt="Tab Index on Google Chrome">
+                          <figcaption class="figure-caption">Selected element with Tab Index on Google Chrome.</figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-md-4">
+                        <figure class="figure margin-bottom-20">
+                          <img src="./img/kickstarter/edge%20tab.png" class="figure-img img-fluid" alt="Tab Index on Microsoft Edge">
+                          <figcaption class="figure-caption">Selected element with Tab Index on Microsoft Edge.</figcaption>
+                        </figure>
+                    </div>
+                    
+                    <div class="w-100"></div>
+                    
+                    <div class="col-md-10">
+                        <p>Furthermore, ten buttons without value and three dropdown buttons that were missing labels were found by WAVE tool. This would be a problem for a blind user because screen reader tool cannot read these buttons and so the user will misunderstand and at time the tool will completely miss the button. The label of each form is supposed to appear properly in order to give users the information regarding forms and fields. This will allow the user to understand how the form work at first sight and do not need to spend time with it.</p>
+                        <div class="text-center">
+                            <figure class="figure margin-bottom-20">
+                              <img src="./img/kickstarter/empty%20button.png" class="figure-img img-fluid" alt="Empty button">
+                              <figcaption class="figure-caption">Empty button notification from WAVE.</figcaption>
+                            </figure>
+                            <figure class="figure margin-bottom-20">
+                              <img src="./img/kickstarter/missing%20label%20form.png" class="figure-img img-fluid" alt="Missing label form">
+                              <figcaption class="figure-caption">Missing form label notification from WAVE.</figcaption>
+                            </figure>
+                        </div>
+                        <p>Next, social media links in footer area showing the only icon of each social media but did not have any text or description, which can confuse screen reader and keyboard users.</p>
+                        <div class="text-center">
+                            <figure class="figure margin-bottom-20">
+                              <img src="./img/kickstarter/empty%20link.png" class="figure-img img-fluid" alt="Links without text">
+                              <figcaption class="figure-caption">Links without text notification from WAVE.</figcaption>
+                            </figure>
+                        </div>
+                        <p>In addition, the colour contrast of text and background did not meet the expectation of WCAG contrast ratio standard that is 4.5:1. For example, text colour of menu lists was too light on the white background which has colour contrast ratio only 2.69 (font colour: #9b9e9e; background colour: #ffffff). This is also shown on the About Us page, white texts on the bright background and video background. These low colour contrast contents would be a problem of people who have a colour vision deficiency or colour blindness, as well as people with old ages who might have low vision condition. Hence, they will find it difficult to read these texts, and may be unable to see it appearing on the page.</p>
+                        <div class="text-center">
+                            <figure class="figure margin-bottom-20">
+                              <img src="./img/kickstarter/menu%20lists.png" class="figure-img img-fluid" alt="Text a of menu lists">
+                              <figcaption class="figure-caption">Text a of menu lists.</figcaption>
+                            </figure>
+                            <figure class="figure margin-bottom-20">
+                              <img src="./img/kickstarter/text%20on%20bright%20bg.png" class="figure-img img-fluid" alt="texts on bright background">
+                              <figcaption class="figure-caption">White texts on the bright background colour.</figcaption>
+                            </figure>
+                            <figure class="figure margin-bottom-20">
+                              <img src="./img/kickstarter/text%20on%20pic.png" class="figure-img img-fluid" alt="texts on picture">
+                              <figcaption class="figure-caption">White texts on the video background.</figcaption>
+                            </figure>
+                        </div>
+                        <p>Moreover, some images are missing alternative text where screen reader users will miss the existing of the image. And some alternative text of images is not describing the image properly. For instance, all images of project lists on the homepage have the same alternative text that is “project”. This may confuse any user with slow or limited internet connection speed and screen reader user as well.</p>
+                    </div>
+                    
+                    <div class="w-100"></div>
+                    
+                    <div class="col-md-4">
+                        <figure class="figure margin-bottom-20">
+                          <img src="./img/kickstarter/img%20missing%20alt.png" class="figure-img img-fluid" alt="Missing alternative text of the image">
+                          <figcaption class="figure-caption">Missing alternative text of the image.</figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-md-4">
+                        <figure class="figure margin-bottom-20">
+                          <img src="./img/kickstarter/confuse%20alt.png" class="figure-img img-fluid" alt="Duplicate alternative text">
+                          <figcaption class="figure-caption">Images with same alternative text, which is able to confuse users.</figcaption>
+                        </figure>
+                    </div>
+                    
+                    <div class="w-100"></div>
+                    
+                    <div class="col-md-10">
+                        <p>The main video content of each project does not have caption and audio description track, even some video has a built-in subtitle, but most do not. The users with hearing impairment would find that is a critical problem of using this website for them. They may not fully understand the content of the video.</p>
+                        <div class="text-center">
+                            <figure class="figure margin-bottom-20">
+                              <img src="./img/kickstarter/caption%20audio.png" class="figure-img img-fluid" alt="The lack of caption and audio description track support of video tag">
+                              <figcaption class="figure-caption">The lack of caption and audio description track support of video tag.</figcaption>
+                            </figure>
+                        </div>
+                        <p>A screen reader on macOS such as VoiceOver works perfectly with Kickstarter website on Safari and Google Chrome, but it does not work on Firefox Quantum. The VoiceOver is unable to detect any text, content, object, and element on the page, it is always saying “Empty”.</p>
+                        <div class="text-center">
+                            <figure class="figure margin-bottom-20">
+                              <img src="./img/kickstarter/VoiceOver%20on%20firefox.png" class="figure-img img-fluid" alt="VoiceOver with Firefox Quantum">
+                              <figcaption class="figure-caption">VoiceOver with Firefox Quantum is unable to detect the object on the website.</figcaption>
+                            </figure>
+                        </div>
+                        <p>Nevertheless, there are assistant applications that help increase user accessibility. The Mouse Keys (macOS’s built-in accessibility tool) will help users with a keyboard who are able to access Kickstarter website on safari and are experiencing the Tab Index issue. With Mouse Keys, the user can control their cursor by numeric keypad. ATbar (atbar.org) is a free tool for assist users increase their accessibility on any website. This tool has a simple interface which is able to understand it in a short time, lightweight, and compatibility with all browsers. It comes with text reader features that users can use when screen reader programs are not working on any browser, like Firefox Quantum with VoiceOver. As well as, adjustability font size, font colour, and background colour features are available for use if users find that the font size is too small or too difficult to read due to the colour contrast. However, some issues that need to solve in HTML itself are still existing, such as the missing value in buttons, improper alternative text of images, labels of form, and lack of capture and description of videos. Besides, those empty links, such as social media links, can be solved by adding aria-label into anchor tag (<code>&lt;a&gt;</code>).</p>
+                        <p>Kickstarter got an average score of 64% on Web2Access.org.</p>
+                        <div class="text-center">
+                            <figure class="figure margin-bottom-20">
+                              <img src="./img/kickstarter/kickstarter-web2access.png" class="figure-img img-fluid" alt="Result of Kickstarter on Web2Access">
+                              <figcaption class="figure-caption">Review of Kickstarter on Web2Access.</figcaption>
+                            </figure>
+                        </div>
+                        <p class="test-device">The evaluation was completed on Firefox Quantum version 57.0.3 (64-bit), Safari version 11.0.2, Google Chrome version 63.0.3239.84 (64-bit), and Microsoft Edge version 5.105860.0 on Windows 10 by Parallels Desktop (virtual machine) in MacBook Air (Early 2014) with macOS High Sierra (10.13.2) and VoiceOver as a screen reader.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <footer>
+            <section class="main-footer">
+                <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <p class="text-center">This website is a part of coursework for Designing Usable and Accessible Technologies (COMP 6219). <br>University of Southampton.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>  
+            </footer>
+        
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+    </body>
+</html>
